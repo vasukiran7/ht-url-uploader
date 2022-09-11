@@ -145,7 +145,7 @@ async def echo(bot, update):
             chat_id=update.chat.id,
             text=Translation.NO_VOID_FORMAT_FOUND.format(str(error_message)),
             reply_to_message_id=update.id,
-            parse_mode="html",
+            parse_mode=pyrogram.enums.ParseMode.HTML,
             disable_web_page_preview=True
         )
         return False
