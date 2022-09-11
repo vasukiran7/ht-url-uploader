@@ -103,6 +103,7 @@ async def echo(bot, update):
         command_to_exec = [
             "youtube-dl",
             "--no-warnings",
+            "--no-check-certificate",
             "--youtube-skip-dash-manifest",
             "-j",
             url,
@@ -112,6 +113,7 @@ async def echo(bot, update):
         command_to_exec = [
             "youtube-dl",
             "--no-warnings",
+            "--no-check-certificate",
             "--youtube-skip-dash-manifest",
             "-j",
             url
