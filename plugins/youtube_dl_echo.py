@@ -288,7 +288,7 @@ async def echo(bot, update):
             text=Translation.FORMAT_SELECTION.format(thumbnail) + "\n" + Translation.SET_CUSTOM_USERNAME_PASSWORD,
             reply_markup=reply_markup,
             parse_mode="html",
-            reply_to_message_id=update.message_id
+            #reply_to_message_id=update.message_id
         )
     else:
         # fallback for nonnumeric port a.k.a seedbox.io
